@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Support</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            border-bottom: 1px solid #eee;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .app-icon {
+            width: 120px;
+            height: 120px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+            background-color: #f5f5f5;
+        }
+
+        .testflight-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            background-color: #f5f5f5;
+            }
+
+            .flex {
+                display: flex;
+            }
+            .flex-row {
+                flex-direction: row;
+            }
+            .justify-center {
+                justify-content: center;
+            }
+            .items-center {
+                align-items: center;
+            }
+
+
+        main {
+            padding: 40px 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            color: #2c3e50;
+            /* margin-bottom: 20px; */
+            font-size: 1.8em;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        .contact-box {
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            padding: 30px;
+            margin-top: 40px;
+        }
+
+        .contact-box h3 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #666;
+            border-top: 1px solid #eee;
+            margin-top: 40px;
+        }
+
+        .faq-item {
+            margin-bottom: 30px;
+        }
+
+        .faq-item h3 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+
+            header {
+                padding: 20px 10px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            .app-icon {
+                width: 80px;
+                height: 80px;
+            }
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        .items-center {
+            align-items: center;
+        }
+        .gap-10 {
+            gap: 10px;
+        }
+        .border-2 {
+            border: 2px solid #2c3e50;
+        }
+        .p-10 {
+            padding: 10px;
+        }
+        .rounded {
+            border-radius: 10px;
+        }
+        .m-10 {
+            margin: 10px;
+        }
+        a {
+            font-weight: bold;
+        }
+        </style>
+</head>
+
+<body>
+    <header>
+        <img class="app-icon" src="https://mact-profile-avatar.s3.us-east-1.amazonaws.com/icon.png" alt="Mact Icon" />
+        <h1>Mact Support</h1>
+        <p>Welcome to our support center</p>
+    </header>
+    
+    <div class=" flex justify-center items-center gap-10">
+        <a href="https://testflight.apple.com/join/YOUR-LINK" class="testflight-button">
+            <div class="border-2 p-10 flex justify-center items-center gap-10 rounded m-10" style="width: fit-content;">
+                <img class="testflight-icon" src="https://mact-profile-avatar.s3.us-east-1.amazonaws.com/testflight-1.avif" alt="Mact Icon" />
+                <h2>Join Beta</h2>
+            </div>
+        </a>
+    </div>
+
+    <main>
+        <section>
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h3>How do I get started?</h3>
+                <p>Mact is free to use. You can get started by downloading the app and making an account.</p>
+            </div>
+            <div class="faq-item">
+                <h3>When are scores validated?</h3>
+                <p>Scores are validated when more than half of the players accept the score.</p>
+            </div>
+            <div class="faq-item">
+                <h3>How are ratings calculated?</h3>
+                <p>We use Weng-Lin algorithm to caclulate your rating once a score has been validated.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Is my data secure?</h3>
+                <p>We take data security seriously. All user data is encrypted and stored securely following industry
+                    best practices.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Do we collect personal data?</h3>
+                <p>We dont collect any personal information. Location is only used in real-time to suggest sessions
+                    nearby.</p>
+            </div>
+            <div class="faq-item">
+                <h3>What devices are supported?</h3>
+                <p>Our app is compatible with iPhone and iPad devices running iOS 14.0 or later.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Privacy Policy</h2>
+            <p>We respect your privacy and are committed to protecting your personal data. For detailed information
+                about how we collect and use your data, please visit our <a
+                    href="https://peach-gilli-60.tiiny.site">Privacy Policy</a>.</p>
+        </section>
+
+        <div class="contact-box">
+            <h3>Need More Help?</h3>
+            <p>We're here to assist you. Contact our support team at:</p>
+            <p>Email: <a href="mailto:omersajid9@outlook.com">omersajid9@outlook.com</a></p>
+            <p>Response time: Within 24 hours</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mact. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
